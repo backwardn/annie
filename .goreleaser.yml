@@ -38,8 +38,8 @@ changelog:
       - '^tests'
       - Merge pull request
       - Merge branch
-archive:
-  name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}_v{{ .Arm }}{{ end }}'
+archives:
+- name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}_v{{ .Arm }}{{ end }}'
   format: tar.gz
   format_overrides:
     - goos: windows
